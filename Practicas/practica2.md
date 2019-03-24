@@ -1,2 +1,3 @@
 #Para la practica 2 he....
-![img](http://www.github.com/FranJPerez/SWAP/imagenes/rsync.png)
+
+![img](https://github.com/FranJPerez/SWAP/tree/master/imagenes/rsync.png)
