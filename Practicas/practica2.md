@@ -1,3 +1,3 @@
-#Para la practica 2 he....
+#*Practica2*
 
 ![img](https://github.com/FranJPerez/SWAP/tree/master/imagenes/rsync.png)
