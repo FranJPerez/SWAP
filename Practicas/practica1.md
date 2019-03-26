@@ -2,10 +2,20 @@
 
 Lo primero que hice para esta practica, fue la correcta instalacion de dos maquinas virtuales en Virtualbox, del sistema operativo Ubuntu 16 de 64 bits.
 
-Una vez instalados nombre una como UbuntuServer1 y la otra como UbuntuServer2\. En ambos uso de usuario fran1 (ya que tuve un problema para el correcto funcionamiento del servidor2) y la contraseña 123 (Simplemente para evitar confundirme). Como parte de la configuracion de ambas maquinas he instalado LAMP, ssh y curl. Ademas he habilitado el segundo adaptador interno de virtualbox en ambas maquinas y tambien le he dado la dirección ip. Ademas modifique en ambas maquinas el fichero => **/etc/network/interface** con el editor **vi** y he añadido: auto enp0s8 iface enp0s8 inet static address 192.168.1.100 (192.168.1.101 en ubuntuServer2) gateway 192.168.1.1 netmask 255.255.255.0 network 192.168.1.0 broadcast 192.168.1.255
+Una vez instalados nombre una como UbuntuServer1 y la otra como UbuntuServer2.
 
-Lo primero que he hecho ha sido ejecutar el comando => _ifconfig_ para ver las direcciones ip de cada una. ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/ifconfig.png)
+En ambos uso de usuario fran1 (ya que tuve un problema para el correcto funcionamiento del servidor2) y la contraseña 123 (Simplemente para evitar confundirme). Como parte de la configuracion de ambas maquinas he instalado LAMP, ssh y curl.
 
-Despues con ssh me he conectado desde ubuntuServer1 a ubuntuServer2 mediante el comando => **ssh 192.168.1.101** Despues me ha pedido la contraseña de ubuntuServer2 y ya he accedido. Despues salgo de dicha maquina mediante el comando **exit**. ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/ssh.png)
+Ademas he habilitado el segundo adaptador interno de virtualbox en ambas maquinas y tambien le he dado la dirección ip. Ademas modifique en ambas maquinas el fichero => **/etc/network/interface** con el editor **vi** y he añadido: auto enp0s8 iface enp0s8 inet static address 192.168.1.100 (192.168.1.101 en ubuntuServer2) gateway 192.168.1.1 netmask 255.255.255.0 network 192.168.1.0 broadcast 192.168.1.255
 
-Y por ultimo he creado en ubuntuServer2 en el directorio _/var/www_ el archivo _hola.html_ y mediante el comando => **curl <http://192.168.1.101/hola.html>** he accedido a dicho documento. ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/curl.png)
+Lo primero que he hecho ha sido ejecutar el comando => _ifconfig_ para ver las direcciones ip de cada una.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/ifconfig.png)
+
+Despues con ssh me he conectado desde ubuntuServer1 a ubuntuServer2 mediante el comando => **ssh 192.168.1.101** Despues me ha pedido la contraseña de ubuntuServer2 y ya he accedido. Despues salgo de dicha maquina mediante el comando **exit**.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/ssh.png)
+
+Y por ultimo he creado en ubuntuServer2 en el directorio _/var/www_ el archivo _hola.html_ y mediante el comando => **curl <http://192.168.1.101/hola.html>** he accedido a dicho documento.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/curl.png)
