@@ -14,7 +14,7 @@ Dejo en blanco passphrase y una vez creada la clave la copio en la otra maquina 
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/sshSinKey.png)
 
-Por ultimo hago uso de la herramienta crontab para la automatización de tareas. En mi caso hare que actualize el contenido de la carpeta /ver/www cada minuto.
+Por ultimo hago uso de la herramienta crontab para la automatización de tareas. En mi caso hare que actualize el contenido de la carpeta **/var/www** cada minuto.
 
 Para ello edito el archivo => **etc/crontab**y añado la linea =>**fran1 rsync -avz -e ssh 192.168.1.100:/var/www/ /var/www**
 
