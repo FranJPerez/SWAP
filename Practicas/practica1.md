@@ -8,7 +8,7 @@ En ambos uso de usuario fran1 (ya que tuve un problema para el correcto funciona
 
 Ademas he habilitado el segundo adaptador interno de virtualbox en ambas maquinas y tambien le he dado la dirección ip. Ademas modifique en ambas maquinas el fichero => **/etc/network/interface** con el editor **vi** y he añadido: auto enp0s8 iface enp0s8 inet static address 192.168.1.100 (192.168.1.101 en ubuntuServer2) gateway 192.168.1.1 netmask 255.255.255.0 network 192.168.1.0 broadcast 192.168.1.255
 
-Lo primero que he hecho ha sido ejecutar el comando => _ifconfig_ para ver las direcciones ip de cada una.
+Lo primero que he hecho ha sido ejecutar el comando => **ifconfig** para ver las direcciones ip de cada una.
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/ifconfig.png)
 
