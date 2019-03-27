@@ -8,7 +8,7 @@ Para coprobar su correcto funcionamiento clono en la maquina2 la carpeta /var/ww
 
 Lo siquiente, es hacer el acceso entre maquinas sin tener que usar continuamente una contraseña. Para ello, genero una clave para la autenticación automatica, con el comando => **ssh-keygen -b 4096 -t rsa**
 
-![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/generateKey.png)
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/generarKey.png)
 
 Dejo en blanco passphrase y una vez creada la clave la copio en la otra maquina mediante => **ssh-copy-id UbuntuServer1** Para comprobarlo hago un ssh y veo que no me pide la clave.
 
