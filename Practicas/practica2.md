@@ -4,7 +4,9 @@ Para la realizacion de la practica2, lo primero que he hecho ha sido instalar en
 
 Para coprobar su correcto funcionamiento clono en la maquina2 la carpeta /var/www de la maquina1 mediante el comando => **rsync -avz -e ssh ipmaquina1:/var/www/ /var/www/**
 
-![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/rsync.png) Y lo compruebo con el comando => **ls** en ambas maquinas.
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/rsync.png)
+
+Y lo compruebo con el comando => **ls** en ambas maquinas.
 
 Lo siquiente, es hacer el acceso entre maquinas sin tener que usar continuamente una contraseña. Para ello, genero una clave para la autenticación automatica, con el comando => **ssh-keygen -b 4096 -t rsa**
 
