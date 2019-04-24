@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Practica3
 
 Para la realizacion de la practica2, lo primero que he hecho ha sido instalar en ambas maquinas la herramienta **rsync**. Despues he hecho que usuario sea el dueño de la carpeta que se va a usar con rsyn, con el comando => **sudo chown fran1:fran1 -R /var/www**.
@@ -25,3 +26,6 @@ Para ello edito el archivo => **etc/crontab**y añado la linea =>**fran1 rsync -
 Compruebo pasado un minuto que se esta actualizando la carpeta con => **ls**
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/copiaCron.png)
+=======
+
+>>>>>>> ee23e62f1f7253c35218f7e9d28bb53b427e13de
