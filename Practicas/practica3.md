@@ -18,7 +18,7 @@ He comprobado que funciona con la orden => sudo systemctl status nginx.
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/statusnginx.png)
 
-Y compruebo el funcionamiento del balanceador, haciendo un curl 192.168.1.102 y segundo la configuracion mostrara el hola.html de la maquina1 o el de la maquina2
+Y compruebo el funcionamiento del balanceador, haciendo un curl 192.168.1.102 y mostrara el hola.html de la maquina1 o el de la maquina2, segun la configuracion que tenga activa para el balanceador, por ejemplo la orden weight.
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/curlbalanceador.png)
 
@@ -30,6 +30,8 @@ Una vez comprobado, paro nginx con la orden stop y realizo la instalacion de hap
 
 Configuro el archivo => /etc/haproxy/haproxy.conf
 
-Y hago al igual que con nginx un stop en todas las maquinas mientras hago las llamadas con peticiones, tambien con la orden =>ab -n 1000000 -c 50 <http://192.168.1.102/hola.html>.
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/cofiguracionhaproxy.png)
+
+Y hago, al igual que con nginx, un stop en todas las maquinas mientras hago las llamadas con peticiones, tambien con la orden =>ab -n 1000000 -c 50 <http://192.168.1.102/hola.html>.
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/haproxytop.png)
