@@ -30,7 +30,7 @@ Una vez comprobado, paro nginx con la orden stop y realizo la instalacion de hap
 
 Configuro el archivo => /etc/haproxy/haproxy.conf
 
-![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/cofiguracionhaproxy.png)
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/configuracionhaproxy.png)
 
 Y hago, al igual que con nginx, un stop en todas las maquinas mientras hago las llamadas con peticiones, tambien con la orden =>ab -n 1000000 -c 50 <http://192.168.1.102/hola.html>.
 
