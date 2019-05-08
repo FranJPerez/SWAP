@@ -1,5 +1,51 @@
 # Practica4
 
-Para esta....
+Con esta practica se pretende crear una....
 
-![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/haproxytop.png)
+Lo primero que he realizado ha sido hacer un certificado en mi maquina 1\. Para ello hago uso del comando => a2enmod ssl Y reinicio apache2 con => systemctl restart apache2
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/1.png)
+
+Despues creo un directorio en apache para ssl y genero el certificado en mi caso con una duracion de un año. Y para generarlo me pedira unos datos que me inventare para la realizacion de la practica.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/2.png)
+
+Una vez creado el certificado, modifico el archivo de configuracion.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/3.png)
+
+Despues activo el servicio ssl y reinicio apache como me indica el terminal.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/4.png)
+
+Para comprobar si funciona correctamente realizo un curl
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/5.png)
+
+Despues hago un clonado de la maquina uno y cambio su direccion ip y el nombre en los diferentes archivos.
+
+Entonces compio la carpeta de una de las dos maquinas de ssl en el balanceador
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/6.png)
+
+Confiuro nginx para que haga uso del puerto 403 con ssl.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/7.png)
+
+Una vez hecho esto compruebo que funciona con un curl con peticiones al balanceador.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/8.png)
+
+Por ultimo configuro el cortafuegos para que filtre el trafico de la granja web. Para esto utilizo iptables, haciendo un scipt que se iniciara al arrancar la maquina. Dicho script lo almacenare en /usr/local/bin con el nombre de iptables-script-init.sh
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/9.png)
+
+Lazo el demonio con los comandos: => systemctl daemon-reload => systemctl enable iptables-config-init.service
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/10.png)
+
+Despues reinicio la maquina y compruebo los puertos de escucha activos.
+
+Y por ultimo compruebo que el cortafuegos esta bien configurado.
+
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/11.png)
