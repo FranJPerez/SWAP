@@ -38,7 +38,7 @@ Una vez hecho esto compruebo que funciona con un curl con peticiones al balancea
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/8.png)
 
-## cortafuegos
+## Cortafuegos
 
 Por ultimo configuro el cortafuegos para que filtre el trafico de la granja web. Para esto utilizo iptables, haciendo un scipt que se iniciara al arrancar la maquina. Dicho script lo almacenare en /usr/local/bin con el nombre de "iptables-script-init.sh".
 
