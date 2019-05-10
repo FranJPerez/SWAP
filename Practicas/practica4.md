@@ -56,4 +56,4 @@ Despues reinicio la maquina y compruebo los puertos de escucha activos.
 
 Y por ultimo compruebo que el cortafuegos esta bien configurado.
 
-![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/12.png)
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/12P4.png)
