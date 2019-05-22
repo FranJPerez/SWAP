@@ -58,8 +58,8 @@ Para comprobar que todo esta correcto, en el esclavo hago => SHOW SLAVE STATUS\G
 
 Como Second_Behind_Master: 0 todo esta correcto
 
-![img](<https://github.com/FranJPerez/SWAP/blob/master/imagenes/12P5.png>
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/12P5.png)
 
 Por ultimo hago un cambio en la base de datos para comprobar que funciona correctamente.
 
-![img](<https://github.com/FranJPerez/SWAP/blob/master/imagenes/13P5.png>
+![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/13P5.png)
