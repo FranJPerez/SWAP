@@ -46,10 +46,20 @@ Reinicio mysql.service
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/9P5.png)
 
-Ahora creo un usuario en mysql con privilegios en la maquina1.
+Ahora creo un usuario en mysql con privilegios en la maquina1, bloqueo las tables y para ver los datos del master que debere introducir en el esclavo hago un SHOW MASTER STATUS;
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/10P5.png)
 
-Por ultimo ejecuto un comando que fijara las variables de mysql.
+Despues en el esclavo introduzco los datos del master.
 
 ![img](https://github.com/FranJPerez/SWAP/blob/master/imagenes/11P5.png)
+
+Para comprobar que todo esta correcto, en el esclavo hago => SHOW SLAVE STATUS\G.
+
+Como Second_Behind_Master: 0 todo esta correcto
+
+![img](<https://github.com/FranJPerez/SWAP/blob/master/imagenes/12P5.png>
+
+Por ultimo hago un cambio en la base de datos para comprobar que funciona correctamente.
+
+![img](<https://github.com/FranJPerez/SWAP/blob/master/imagenes/13P5.png>
